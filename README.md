@@ -49,8 +49,82 @@ if(v.empty()) cout<<"Empty"<<endl;
      for(int i=0;i<v.size();i++)
    {
        cout<<v[i]<<" ";
-   }
-
-   
-    
+   }    
 }
+
+
+11..Insert--cpp
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>v;
+    v.push_back(10);//v[0]
+    v.push_back(20);//v[1]
+    v.push_back(30);//v[2]
+    v.push_back(40);//v[3]
+    v.push_back(50);//v[4]v.push_back(1);//v[0]
+
+   for(int i=0;i<v.size();i++)
+   {
+       cout<<v[i]<<" ";
+   }
+   cout<<endl;
+
+   v.insert(v.begin()+2,3,1);
+
+   for(int i=0;i<v.size();i++)
+   {
+       cout<<v[i]<<" ";
+   }
+}
+
+12.swap
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>v1;
+    v1.push_back(10);//v[0]
+    v1.push_back(20);//v[1]
+    v1.push_back(30);//v[2]
+    v1.push_back(40);//v[3]
+    v1.push_back(50);//v[4]v.push_back(1);//v[0]
+
+    vector<int>v2;
+    v2.push_back(1);
+    v2.push_back(2);
+    v2.push_back(3);
+
+    cout<<"Before swaping"<<endl;
+    for(int i=0;i<v1.size();i++)
+    {
+        cout<<v1[i]<<" ";
+    }
+   cout<<endl;
+
+       for(int i=0;i<v2.size();i++)
+    {
+        cout<<v2[i]<<" ";
+    }
+   cout<<endl;
+
+   swap(v1,v2);
+   cout<<"Ater swaping"<<endl;
+    for(int i=0;i<v1.size();i++)
+    {
+        cout<<v1[i]<<" ";
+    }
+   cout<<endl;
+
+       for(int i=0;i<v2.size();i++)
+    {
+        cout<<v2[i]<<" ";
+    }
+   cout<<endl;
+
+}
+
+
+
