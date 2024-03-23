@@ -218,4 +218,93 @@ int main()
         cout<<*it<<endl;
     }
 }
+-----------
+Part --  02
+List
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    list<int>li;
+    li.push_back(1);
+    li.push_back(2);
+    li.push_back(3);
 
+    for(auto it:li){
+        cout<<it<<" " ;
+    }
+    cout<<endl;
+
+}
+
+Try li.front & li.back li.size().liclear() li.empty()
+--------------------
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    list<int>li;
+    li.push_back(1);
+    li.push_back(2);
+    li.push_back(3);
+    li.push_back(4);
+
+    //li.clear();
+    //li.pop_front();
+    //li.pop_back();
+    for(auto it:li){
+        cout<<it<<" " ;
+    }
+    cout<<endl;
+    cout<<li.size()<<endl;
+    cout<<endl;
+
+//if(li.empty())cout<<"Empty"<<endl;
+  //  else cout<<"Not Empty";
+
+}
+
+
+Insert
+-------------------
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    list<int>li;
+    li.push_back(1);
+    li.push_back(2);
+    li.push_back(3);
+    li.push_back(4);
+
+    list<int>::iterator it;
+    it=li.begin();
+    advance(it,3);
+    li.insert(it,4,5);
+
+    for(auto it:li)
+    {
+        cout<<it<<" ";
+    }
+    cout<<endl;
+}
+
+-----------------
+Specific vlue erase krbo
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    list<int>li={1,2,3,4,5,6};
+    
+    list<int>::iterator it;
+    it=li.begin();
+    advance(it,3);
+
+    li.erase(it);
+    for(auto it:li)
+    {
+        cout<<it<<" ";
+    }
+    cout<<endl;
+}
