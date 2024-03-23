@@ -185,4 +185,37 @@ int main()
 
 }
 
+14.Vector iterator
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>v1;
+    v1.push_back(100);//v[0]
+    v1.push_back(20);
+    v1.push_back(300);
+    v1.push_back(5);
+
+    vector<int>::iterator it;
+    it=v1.begin()+3;
+    cout<<*it<<endl;
+}
+all
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>v1;
+    v1.push_back(100);//v[0]
+    v1.push_back(20);
+    v1.push_back(300);
+    v1.push_back(5);
+
+    vector<int>::iterator it;
+
+    for(it=v1.begin();it!=v1.end();it++)
+    {
+        cout<<*it<<endl;
+    }
+}
 
