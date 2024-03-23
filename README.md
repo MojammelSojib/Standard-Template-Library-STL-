@@ -126,5 +126,63 @@ int main()
 
 }
 
+13.Vector sort
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>v1;
+    v1.push_back(100);//v[0]
+    v1.push_back(20);
+    v1.push_back(300);
+    v1.push_back(5);
+    v1.push_back(10);
+
+    cout<<"Before sort ";
+    for(int i=0;i<v1.size();i++)
+    {
+        cout<<v1[i]<<" ";
+    }
+    cout<<endl;
+
+    sort(v1.begin(),v1.end());
+    cout<<"After sort ";
+    for(int i=0;i<v1.size();i++)
+    {
+        cout<<v1[i]<<" ";
+    }
+    cout<<endl;
+
+}
+
+14.Reverse
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    vector<int>v1;
+    v1.push_back(100);//v[0]
+    v1.push_back(20);
+    v1.push_back(300);
+    v1.push_back(5);
+    v1.push_back(10);
+
+    cout<<"Before reverse ";
+    for(int i=0;i<v1.size();i++)
+    {
+        cout<<v1[i]<<" ";
+    }
+    cout<<endl;
+
+    reverse(v1.begin(),v1.end());
+    cout<<"After reverse ";
+    for(int i=0;i<v1.size();i++)
+    {
+        cout<<v1[i]<<" ";
+    }
+    cout<<endl;
+
+}
 
 
